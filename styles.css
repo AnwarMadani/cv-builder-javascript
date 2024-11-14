@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+
+.left-side > *{
+    border: 1px solid grey;
+    border-radius: .3rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    border: 1px solid grey;
+    box-shadow: 0 5px 5px 0 grey;
+}
+
+.personal-info-resume{
+    background-color: blue;
+    color: white;
+    padding: 2rem;
+}
+
+.education h2,
+.experience h2{
+    background-color: grey;
+    margin: 1rem;
+}
+
+.education-info,
+.experience-info{
+    display: flex;
+    justify-content: space-evenly;
+}
